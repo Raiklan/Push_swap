@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 15:26:31 by saich             #+#    #+#             */
-/*   Updated: 2021/11/16 16:28:12 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/17 16:40:51 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ typedef struct s_begin
 {
 	t_check		*begin_a;
 	t_check		*begin_b;
-	t_push		*begin_c;
+	t_push		*begin_comp;
 }				t_begin;
 
 #endif

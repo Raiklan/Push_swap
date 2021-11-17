@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 15:21:39 by saich             #+#    #+#             */
-/*   Updated: 2021/11/16 18:42:38 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/17 15:18:07 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,8 @@ int	main(int ac, char **av)
 	if (ft_checkav(av) == -1 && write(1, "Error\n", 7))
 		return (0);
 	pile.a = ft_recup(ac, av);
+	if (ft_lstsize(&pile.a) > 1)
+		pile.a = ft_choose(&pile);
 	ft_free(&pile.a);
 	return (0);
 }
