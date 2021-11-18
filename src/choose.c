@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:18:33 by saich             #+#    #+#             */
-/*   Updated: 2021/11/17 17:22:43 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/17 23:42:43 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_check	*ft_choose(t_pile *pile)
 	if (ft_lst_comp(pile->a, finish) == 1 || ft_lstsize(&pile->a) <= 3)
 	{
 		if (ft_lst_comp(pile->a, finish) == 0)
-			ft_3(&pile->a, &begin);
+			ft_3fast(&pile->a, &begin);
 		ft_free_lst(&finish);
 		return (pile->a);
 	}
