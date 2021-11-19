@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 15:26:31 by saich             #+#    #+#             */
-/*   Updated: 2021/11/18 01:27:15 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/19 15:46:32 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,15 @@ void	ft_free_lst_push(t_push *p);
 int		ft_is_sorted(t_check *a);
 int		ft_median(t_pile *pile, t_begin *begin, t_push **comp, int n);
 t_check	*ft_choose(t_pile *pile);
+void	ft_sa(t_check **a, t_check **start_a, int n);
+void	ft_sb(t_check **b, t_check **start_b, int n);
+void	ft_ss(t_check **a, t_check **b, t_check **start_a, t_check **start_b);
+void	ft_pa(t_check **a, t_check **b, t_check **start_a, t_check **start_b);
+void	ft_pb(t_check **a, t_check **b, t_check **start_a, t_check **start_b);
+void	ft_ra(t_check **a, t_check **start_a, int n);
+void	ft_rb(t_check **b, t_check **start_b, int n);
+void	ft_rr(t_check **a, t_check **b, t_check **start_a, t_check **start_b);
+void	ft_rra(t_check **a, t_check **start_a, int n);
+void	ft_rrb(t_check **b, t_check **start_b, int n);
 
 #endif
