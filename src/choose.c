@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:18:33 by saich             #+#    #+#             */
-/*   Updated: 2021/11/17 23:42:43 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/19 03:06:09 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,7 @@ t_check	*ft_choose(t_pile *pile)
 	comp = (t_push *)malloc(sizeof(t_push));
 	if (!comp)
 		ft_error_push(pile, &begin, comp);
-	ft_init_comp(&comp, pile, &begin, comp);
-	ft_init_begin(&begin, pile->a, pile->b, comp);
+	ft_init(&comp, pile, &begin);
 	ft_free_lst(&pile->tmp);
 	ft_quicksort(pile, &begin, &comp, finish);
 	if (pile->b)
@@ -41,3 +40,14 @@ t_check	*ft_choose(t_pile *pile)
 	ft_free_lst(&finish);
 	return (begin.begin_a);
 }
+
+void	ft_init(t_push **comp, t_pile *pile, t_begin *begin)
+{
+	ft_init_comp(comp, pile, begin, *comp);
+	ft_init_begin(begin, pile->a, pile->b, *comp);
+}
+
+/*
+	ft_init_comp(&comp, pile, &begin, comp);
+	ft_init_begin(&begin, pile->a, pile->b, comp);
+*/
