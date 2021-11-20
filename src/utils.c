@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 18:33:54 by saich             #+#    #+#             */
-/*   Updated: 2021/11/18 01:27:47 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/19 16:35:28 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,4 +74,11 @@ int	ft_lst_comp(t_check *p, t_check *finish)
 		finish = finish->next;
 	}
 	return (1);
+}
+
+void	ft_rrr(t_check **a, t_check **b, t_check **start_a, t_check **start_b)
+{
+	ft_rra(a, start_a, 0);
+	ft_rrb(b, start_b, 0);
+	write(1, "rrr\n", 5);
 }

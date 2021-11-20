@@ -6,7 +6,7 @@
 /*   By: saich <saich@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 15:26:31 by saich             #+#    #+#             */
-/*   Updated: 2021/11/19 15:46:32 by saich            ###   ########.fr       */
+/*   Updated: 2021/11/20 02:57:39 by saich            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,14 @@ void	ft_rb(t_check **b, t_check **start_b, int n);
 void	ft_rr(t_check **a, t_check **b, t_check **start_a, t_check **start_b);
 void	ft_rra(t_check **a, t_check **start_a, int n);
 void	ft_rrb(t_check **b, t_check **start_b, int n);
+t_check	*ft_3fast(t_check **a, t_begin *b);
+t_check	*ft_lst_n_dup_a(t_pile *pile, t_begin *begin, t_push **comp, int n);
+t_check	*ft_lst_n_dup_b(t_pile *pile, t_begin *begin, t_push **comp, int n);
+void	ft_case1(t_check **a, t_check **start_a);
+void	ft_case2(t_check **a, t_check **start_a);
+void	ft_case3(t_check **a, t_check **start_a);
+void	ft_case4(t_check **a, t_check **start_a);
+t_check	*ft_quicksort(t_pile *pile, t_begin *st, t_push **comp,
+			t_check *finish);
 
 #endif
